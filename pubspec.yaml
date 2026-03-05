@@ -1,0 +1,32 @@
+name: food_ui_app
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/image/image.png
+    - lib/assets/image/image1.png
+    - lib/assets/image/image2.png
+    - lib/assets/image/image3.png
+
+  fonts:
+    - family: Sen
+      fonts:
+        - asset: lib/assets/font/Sen-Regular.ttf
+        - asset: lib/assets/font/Sen-ExtraBold.ttf
+          weight: 800
