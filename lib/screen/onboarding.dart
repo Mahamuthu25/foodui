@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_ui_app/screen/verification_screen.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -37,7 +38,12 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      // Navigate to your main app/home screen
+      Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => VerificationScreen(),
+      ),
+    );
     }
   }
 
